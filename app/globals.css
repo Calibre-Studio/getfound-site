@@ -322,25 +322,25 @@ body.js .hero-reveal.in .aw { animation: heroRise 0.85s var(--ease) both; animat
 .offer { padding-top: clamp(8px, 2vw, 22px); padding-bottom: clamp(40px, 7vw, 92px); }
 .offer-intro { font-size: var(--h2); font-weight: 600; letter-spacing: -0.035em; line-height: 1.08; max-width: 21ch; margin: 0 0 clamp(28px, 4vw, 50px); text-wrap: balance; }
 
-/* start-here band (clickable) */
-.offer-entry { display: grid; grid-template-columns: 1.7fr 1fr; gap: clamp(22px, 4vw, 56px); align-items: end; background: var(--ink); color: var(--bg); padding: clamp(28px, 4vw, 48px); transition: transform 0.4s var(--ease); }
-.offer-entry:hover { transform: translateY(-3px); }
-.offer-entry .eyebrow { color: var(--bg); margin-bottom: clamp(16px, 3vw, 28px); }
+/* start-here card (clickable) — same white bordered treatment as the two cards below */
+.offer-entry { display: grid; grid-template-columns: 1.7fr 1fr; gap: clamp(22px, 4vw, 56px); align-items: end; background: var(--bg); color: var(--ink); border: 1px solid var(--line-2); padding: clamp(28px, 4vw, 48px); transition: border-color 0.45s var(--ease), transform 0.45s var(--ease); }
+.offer-entry:hover { border-color: var(--ink); transform: translateY(-3px); }
+.offer-entry .eyebrow { color: var(--ink); margin-bottom: clamp(16px, 3vw, 28px); }
 .offer-entry-title { font-size: clamp(1.5rem, 3vw, 2.3rem); font-weight: 600; letter-spacing: -0.035em; line-height: 1.05; }
-.offer-entry-body { font-size: 1.02rem; line-height: 1.5; color: rgba(255,255,255,0.76); margin: 14px 0 0; max-width: 48ch; }
-.offer-entry-cta { display: inline-flex; align-items: center; gap: 9px; font-weight: 600; font-size: 1.04rem; letter-spacing: -0.01em; margin-top: clamp(20px, 3vw, 32px); }
+.offer-entry-body { font-size: 1.02rem; line-height: 1.5; color: var(--muted); margin: 14px 0 0; max-width: 48ch; }
+.offer-entry-cta { display: inline-flex; align-items: center; gap: 9px; font-weight: 600; font-size: 1.04rem; letter-spacing: -0.01em; margin-top: clamp(20px, 3vw, 32px); color: var(--ink); }
 .offer-entry-cta .arr { display: inline-block; transition: transform 0.4s var(--ease); }
 .offer-entry:hover .offer-entry-cta .arr { transform: translateX(5px); }
 .offer-entry-price { text-align: right; }
 .offer-entry-price .amount { display: block; font-size: clamp(3rem, 7vw, 5rem); font-weight: 700; letter-spacing: -0.05em; line-height: 0.84; font-variant-numeric: tabular-nums; }
-.offer-entry-price .note { display: block; font-family: var(--font-mono), ui-monospace, Menlo, monospace; font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,0.62); margin-top: 16px; }
+.offer-entry-price .note { display: block; font-family: var(--font-mono), ui-monospace, Menlo, monospace; font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--faint); margin-top: 16px; }
 @media (max-width: 720px) { .offer-entry { grid-template-columns: 1fr; align-items: start; gap: 26px; } .offer-entry-price { text-align: left; } }
 
 /* the two offering cards reuse .door */
 .offer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 2.4vw, 28px); margin-top: clamp(16px, 2.4vw, 28px); }
 @media (max-width: 760px) { .offer-grid { grid-template-columns: 1fr; } }
 .offer-card { min-height: 0; }
-.offer-card:hover { transform: none; border-color: var(--line-2); }
+.offer-card:hover { transform: translateY(-3px); border-color: var(--ink); }
 .offer-card .door-body { max-width: 40ch; }
 .layers { list-style: none; margin: clamp(16px, 2.2vw, 22px) 0 0; padding: 0; display: grid; gap: 10px; }
 .layers li { font-size: 1rem; line-height: 1.4; padding-left: 22px; position: relative; color: var(--ink); }
@@ -376,3 +376,34 @@ body.js .hero-reveal.in .aw { animation: heroRise 0.85s var(--ease) both; animat
 .cta-acts { display: inline-flex; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center; }
 .btn-link.ghost { background: var(--bg); color: var(--ink); border: 1px solid var(--ink); }
 .btn-link.ghost:hover { background: var(--ink); color: var(--bg); }
+
+/* ---------- motion layer (varied, on-brand, reduced-motion safe) ---------- */
+/* reveal hooks: JS adds .in when in view. Without JS, everything stays visible. */
+body.js .r { opacity: 0; transform: translateY(22px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+body.js .r.in { opacity: 1; transform: none; }
+body.js .r.soft { transform: translateY(13px); }
+
+/* staggered children (cards-in-a-grid, step rows) */
+body.js .sg > * { opacity: 0; transform: translateY(20px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); transition-delay: calc(var(--i, 0) * 80ms); }
+body.js .sg.in > * { opacity: 1; transform: none; }
+
+/* editorial number wipe-up: the figure rises from behind a mask */
+.num { display: inline-block; overflow: hidden; vertical-align: bottom; }
+.num-in { display: inline-block; transition: transform 0.85s var(--ease); transition-delay: 0.12s; }
+body.js .r .num-in, body.js .sg .num-in { transform: translateY(115%); }
+body.js .r.in .num-in, body.js .sg.in .num-in { transform: translateY(0); }
+
+/* dash-list items: stagger in once the grid reveals */
+body.js .sg .layers li { opacity: 0; transform: translateY(11px); transition: opacity 0.55s var(--ease), transform 0.55s var(--ease); transition-delay: calc(0.22s + var(--i, 0) * 70ms); }
+body.js .sg.in .layers li { opacity: 1; transform: none; }
+
+/* stat emphasis: a small confident pop on the headline figure */
+body.js .pop { display: inline-block; opacity: 0; transform: scale(0.9); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); transition-delay: 0.18s; }
+body.js .r.in .pop { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  body.js .r, body.js .sg > *, body.js .num-in, body.js .pop, body.js .sg .layers li {
+    opacity: 1 !important; transform: none !important; transition: none !important; filter: none !important;
+  }
+  .offer-entry, .offer-card, .door { transition: none !important; }
+}

@@ -86,15 +86,15 @@ export default function Page() {
 
   useEffect(() => {
     document.body.classList.add("js");
-    const nodes = () => document.querySelectorAll(".reveal, .stagger");
+    const nodes = () => document.querySelectorAll(".reveal, .stagger, .r, .sg");
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) {
-      document.querySelectorAll(".reveal, .stagger, .hero-reveal").forEach((el) => el.classList.add("in"));
+      document.querySelectorAll(".reveal, .stagger, .r, .sg, .hero-reveal").forEach((el) => el.classList.add("in"));
       return;
     }
 
     const vh = window.innerHeight || 0;
-    document.querySelectorAll(".reveal, .stagger, .hero-reveal").forEach((el) => {
+    document.querySelectorAll(".reveal, .stagger, .r, .sg, .hero-reveal").forEach((el) => {
       const r = el.getBoundingClientRect();
       if (r.top < vh * 0.92 && r.bottom > 0) el.classList.add("in");
     });
@@ -146,16 +146,16 @@ export default function Page() {
         <p className="eyebrow ar" style={{ "--d": "0s" }}><span className="slash">//</span>Be Found</p>
         <h1 className="display"><AnimWords text="Be the brand AI recommends." base={0.12} step={0.07} /></h1>
         <p className="lead ar" style={{ "--d": "0.55s" }}>
-          People now ask ChatGPT, Claude, Gemini and Google&rsquo;s AI for the best option before they ask
-          anyone else. We read your site the way those engines do, fix what they cannot understand, and get
+          People now ask ChatGPT, Claude, Gemini, Grok, Perplexity and Copilot for the best option before they
+          ask anyone else. We read your site the way those engines do, fix what they cannot understand, and get
           you into the answers your customers act on.
         </p>
       </section>
 
       <section className="offer wrap">
-        <p className="offer-intro reveal">Three ways to get found. Start with a free 60-second check, then go as far as you want.</p>
+        <p className="offer-intro r">Three ways to get found. Start with a free 60-second check, then go as far as you want.</p>
 
-        <a className="offer-entry reveal" href={STRIPE.audit} target="_blank" rel="noopener noreferrer">
+        <a className="offer-entry r" href={STRIPE.audit} target="_blank" rel="noopener noreferrer">
           <div className="offer-entry-main">
             <p className="eyebrow"><span className="slash">//</span>Start here</p>
             <h2 className="offer-entry-title">AI Visibility Audit + 90-Day Plan</h2>
@@ -166,26 +166,26 @@ export default function Page() {
             <span className="offer-entry-cta">Start with the audit <span className="arr" aria-hidden="true">→</span></span>
           </div>
           <div className="offer-entry-price">
-            <span className="amount">&euro;350</span>
+            <span className="amount"><span className="num"><span className="num-in">&euro;350</span></span></span>
             <span className="note">One-time &middot; 3 days &middot; credited if you continue</span>
           </div>
         </a>
 
-        <div className="offer-grid stagger">
-          <div className="door offer-card">
+        <div className="offer-grid sg">
+          <div className="door offer-card" style={{ "--i": 0 }}>
             <p className="door-meta">One-time &middot; about 3 weeks</p>
             <h3 className="door-title">Get Found Sprint</h3>
             <p className="door-body">We fix the four layers, so you go from invisible to showing up.</p>
             <ul className="layers">
-              {LAYERS.map((l) => <li key={l}>{l}</li>)}
+              {LAYERS.map((l, i) => <li key={l} style={{ "--i": i }}>{l}</li>)}
             </ul>
             <div className="offer-foot">
-              <span className="price"><span className="amount">&euro;1,800</span></span>
+              <span className="price"><span className="amount"><span className="num"><span className="num-in">&euro;1,800</span></span></span></span>
               <a className="offer-buy" href={STRIPE.sprint} target="_blank" rel="noopener noreferrer">Book the Sprint <span className="arr" aria-hidden="true">→</span></a>
             </div>
           </div>
 
-          <div className="door offer-card">
+          <div className="door offer-card" style={{ "--i": 1 }}>
             <p className="door-meta">Monthly &middot; 3-month minimum</p>
             <h3 className="door-title">Always-On Visibility</h3>
             <p className="door-body">Stay visible as the engines change. Cancel anytime after the first three months.</p>
@@ -210,17 +210,17 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="offer-steps reveal">
-          {STEPS.map((s) => (
-            <div className="offer-step" key={s.t}>
+        <div className="offer-steps sg">
+          {STEPS.map((s, i) => (
+            <div className="offer-step" key={s.t} style={{ "--i": i }}>
               <h4>{s.t}</h4>
               <p>{s.b}</p>
             </div>
           ))}
         </div>
 
-        <div className="impact reveal">
-          <p className="impact-stmt">People are 2.5x more likely to visit a brand AI recommends than its competitor.</p>
+        <div className="impact r">
+          <p className="impact-stmt">People are <span className="pop">2.5x</span> more likely to visit a brand AI recommends than its competitor.</p>
           <p className="impact-src">SimilarWeb &middot; The Downstream Impact of AI Visibility, 2026</p>
         </div>
       </section>

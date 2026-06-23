@@ -18,7 +18,7 @@ export const metadata = {
   metadataBase: new URL("https://getfound.calibrestudio.co"),
   title: "Get Found: Be the Brand AI Recommends | Calibre Studio",
   description:
-    "When customers ask ChatGPT, Claude, Gemini and Google's AI for the best option, be the answer. Calibre Studio reads your site the way the engines do, fixes what they cannot understand, and gets you into the answers. Audit from €350.",
+    "When customers ask ChatGPT, Claude, Gemini, Grok, Perplexity and Copilot for the best option, be the answer. Calibre Studio reads your site the way the engines do, fixes what they cannot understand, and gets you into the answers. Audit from €350.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Get Found: Be the Brand AI Recommends | Calibre Studio",
@@ -69,7 +69,7 @@ const SCHEMA = {
       isPartOf: { "@id": "https://getfound.calibrestudio.co/#website" },
       about: { "@id": "https://www.calibrestudio.co/#org" },
       description:
-        "AI visibility for growing brands: get recommended when customers ask ChatGPT, Claude, Gemini, Perplexity and Google AI Overviews.",
+        "AI visibility for growing brands: get recommended when customers ask ChatGPT, Claude, Gemini, Grok, Perplexity and Copilot.",
     },
     {
       "@type": "Service",
