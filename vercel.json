@@ -1,6 +1,12 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [{ "type": "host", "value": "account.calibrestudio.co" }],
+      "destination": "https://billing.stripe.com/p/login/6oU5kFasScHuceq7jE6c000",
+      "permanent": false
+    },
+    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "account.calibrestudio.co" }],
       "destination": "https://billing.stripe.com/p/login/6oU5kFasScHuceq7jE6c000",
