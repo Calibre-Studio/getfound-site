@@ -6,7 +6,7 @@ import LogoScroller from "./components/LogoScroller";
 const CALENDLY = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/calibrestudio";
 const SITE = "https://www.calibrestudio.co";
 const INDEXED = "https://indexed.calibrestudio.co";
-const PORTAL = "https://billing.stripe.com/p/login/6oU5kFasScHuceq7jE6c000";
+const PORTAL = "/account"; // branded path; redirects to the Stripe customer portal via vercel.json
 const LOGO = "https://framerusercontent.com/images/DNz730VdRk76gPUHXillIWOOI.png";
 const REEL = "https://cdn.calibrestudio.co/Motion/calibrestudio_directed_hero.mp4";
 
