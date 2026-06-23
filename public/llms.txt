@@ -1,20 +1,24 @@
-# Presence by Calibre Studio
+# Get Found by Calibre Studio
 
-> Presence is how a brand shows up now: seen by people, and found by AI. Calibre Studio builds both halves: the brand and film craft that makes you worth remembering (Be Seen), and the AI visibility that makes you easy to recommend (Be Found).
+> Get Found is Calibre Studio's AI visibility offering: get your brand recommended when customers ask ChatGPT, Claude, Gemini, Grok, Perplexity or Copilot for the best option. Start free, then choose an audit, a one-time fix, or always-on monitoring.
 
-## The two doors
-- Be Seen (Directed): brand, content and film made with craft. The work that makes people stop, feel something, and remember you. See the work: https://www.calibrestudio.co/works
-- Be Found (Indexed): a free audit of how AI reads your brand, scored on the DCAT method (Discoverability, Clarity, Authority, Trust). Run it: https://indexed.calibrestudio.co/
+## What it is
+Search changed. People now ask an AI assistant, and it answers with a shortlist of a few brands. Get Found makes a brand easy for those engines to read, understand, rate and recommend, scored on the DCAT method: Discoverability, Clarity, Authority, Trust.
 
-## Why both
-Brand and film work make people remember you. AI visibility decides whether you are recommended inside an AI answer when someone asks ChatGPT, Claude, Gemini, Perplexity or Google AI Overviews for a brand like yours. Being seen gets you noticed. Being found gets you recommended. You need both.
+## The offerings
+- Free AI visibility check: a free 60-second score of how AI sees your brand, no card. Run it: https://indexed.calibrestudio.co/
+- AI Visibility Audit and 90-Day Plan: €350 one-time. A full audit scored across DCAT with a prioritised 90-day plan. Credited if you continue. https://getfound.calibrestudio.co/
+- Get Found Sprint: €1,800 one-time. Done-for-you fix of site structure and schema, content and entities, citations and reputation. https://getfound.calibrestudio.co/
+- Always-On Visibility: from €390/mo (Starter) or €890/mo (Growth). Monthly monitoring across the main AI engines, ongoing fixes and a score report. Three-month minimum. https://getfound.calibrestudio.co/
+
+## Who it is for
+Growing brands that want to be the answer an AI recommends, including brands that rank fine in traditional search but are missing from AI answers.
 
 ## Use it
-- Presence overview: https://presence.calibrestudio.co/
-- Be Seen, see the work: https://www.calibrestudio.co/works
-- Be Found, run the audit: https://indexed.calibrestudio.co/
+- Get Found, the offerings: https://getfound.calibrestudio.co/
+- Free AI visibility check: https://indexed.calibrestudio.co/
 - Calibre Studio: https://www.calibrestudio.co/
 - Book a call: https://calendly.com/calibrestudio
 
 ## About
-Calibre Studio is a creative and AI studio between the Gold Coast and Paris. Presence brings together its two offerings: Directed (brand and film) and Indexed (AI visibility), so a brand is both worth seeing and easy for AI to find.
+Calibre Studio is a creative and AI studio between the Gold Coast and Paris. Get Found (Indexed) is its AI visibility offering; Directed is its brand and film work. Together they make a brand both worth seeing and easy for AI to find.

@@ -6,6 +6,7 @@ import LogoScroller from "./components/LogoScroller";
 const CALENDLY = process.env.NEXT_PUBLIC_CALENDLY_URL || "https://calendly.com/calibrestudio";
 const SITE = "https://www.calibrestudio.co";
 const INDEXED = "https://indexed.calibrestudio.co";
+const PORTAL = "https://billing.stripe.com/p/login/6oU5kFasScHuceq7jE6c000";
 const LOGO = "https://framerusercontent.com/images/DNz730VdRk76gPUHXillIWOOI.png";
 const REEL = "https://cdn.calibrestudio.co/Motion/calibrestudio_directed_hero.mp4";
 
@@ -288,7 +289,7 @@ export default function Page() {
 
           <div className="footer-legal">
             <div className="footer-legal-links">
-              <a href={`${SITE}/terms`}>Terms</a><span aria-hidden="true">•</span><a href={`${SITE}/privacy`}>Privacy</a><span className="footer-legal-spacer" aria-hidden="true"></span><span className="footer-legal-bullet" aria-hidden="true">•</span><a href="https://app.calibrestudio.co/">Login</a><span aria-hidden="true">•</span><a href={INDEXED}>Indexed</a>
+              <a href={`${SITE}/terms`}>Terms</a><span aria-hidden="true">•</span><a href={`${SITE}/privacy`}>Privacy</a><span className="footer-legal-spacer" aria-hidden="true"></span><span className="footer-legal-bullet" aria-hidden="true">•</span><a href="https://app.calibrestudio.co/">Login</a><span aria-hidden="true">•</span><a href={INDEXED}>Indexed</a><span aria-hidden="true">•</span><a href={PORTAL}>Manage subscription</a>
             </div>
             <span className="footer-copy">© {new Date().getFullYear()} Calibre Studio® | GC | Paris</span>
           </div>
