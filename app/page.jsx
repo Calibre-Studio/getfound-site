@@ -289,7 +289,7 @@ export default function Page() {
 
           <div className="footer-legal">
             <div className="footer-legal-links">
-              <a href={`${SITE}/terms`}>Terms</a><span aria-hidden="true">•</span><a href={`${SITE}/privacy`}>Privacy</a><span className="footer-legal-spacer" aria-hidden="true"></span><span className="footer-legal-bullet" aria-hidden="true">•</span><a href="https://app.calibrestudio.co/">Login</a><span aria-hidden="true">•</span><a href={INDEXED}>Indexed</a><span aria-hidden="true">•</span><a href={PORTAL}>Manage subscription</a>
+              <a href={`${SITE}/terms`}>Terms</a><span aria-hidden="true">•</span><a href={`${SITE}/privacy`}>Privacy</a><span className="footer-legal-spacer" aria-hidden="true"></span><span className="footer-legal-bullet" aria-hidden="true">•</span><a href="https://app.calibrestudio.co/" target="_blank" rel="noopener noreferrer">Login</a><span aria-hidden="true">•</span><a href={INDEXED}>Indexed</a><span aria-hidden="true">•</span><a href={PORTAL} target="_blank" rel="noopener noreferrer">Manage subscription</a>
             </div>
             <span className="footer-copy">© {new Date().getFullYear()} Calibre Studio® | GC | Paris</span>
           </div>
