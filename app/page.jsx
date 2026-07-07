@@ -263,10 +263,10 @@ export default function Page() {
               <div className="footer-rowgroup">
                 <span className="footer-collabel">Be Found</span>
                 <ul className="footer-list">
+                  <li><a href="https://presence.calibrestudio.co/">Presence</a><span aria-hidden="true">•</span></li>
                   <li><a href={INDEXED}>Free AI check</a><span aria-hidden="true">•</span></li>
-                  <li><a href={STRIPE.audit}>Audit + Plan</a><span aria-hidden="true">•</span></li>
-                  <li><a href={STRIPE.sprint}>Get Found Sprint</a><span aria-hidden="true">•</span></li>
-                  <li><a href={STRIPE.starter}>Always-On</a><span aria-hidden="true">•</span></li>
+                  <li><a href="https://getfound.calibrestudio.co/">Get Found</a><span aria-hidden="true">•</span></li>
+                  <li><a href="https://ads.calibrestudio.co/">OpenAI Ads</a><span aria-hidden="true">•</span></li>
                   <li><a href={`${SITE}/intelligence`}>Intelligence</a><span aria-hidden="true">•</span></li>
                 </ul>
               </div>
