@@ -147,8 +147,8 @@ export default function Page() {
         <p className="eyebrow ar" style={{ "--d": "0s" }}><span className="slash">//</span>Be Found</p>
         <h1 className="display"><AnimWords text="Be the brand AI recommends." base={0.12} step={0.07} /></h1>
         <p className="lead ar" style={{ "--d": "0.55s" }}>
-          People now ask ChatGPT, Claude, Gemini, Grok, Perplexity and Copilot for the best option before they
-          ask anyone else. We read your site the way those engines do, fix what they cannot understand, and get
+          People now ask ChatGPT, Claude, Gemini, Grok, Perplexity, Copilot and Google AI Overviews for the best option before they
+          ask anyone else. We read your site the way those engines do, and the rest of the web they cross-check it against, fix what is holding you back on both, and get
           you into the answers your customers act on.
         </p>
       </section>
@@ -222,7 +222,7 @@ export default function Page() {
 
         <div className="impact r">
           <p className="impact-stmt">People are <span className="pop">2.5x</span> more likely to visit a brand AI recommends than its competitor.</p>
-          <p className="impact-src">SimilarWeb &middot; The Downstream Impact of AI Visibility, 2026</p>
+          <p className="impact-src">Similarweb &middot; The Downstream Impact of AI Visibility, 2026</p>
         </div>
       </section>
 
