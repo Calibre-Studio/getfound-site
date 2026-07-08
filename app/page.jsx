@@ -266,7 +266,7 @@ export default function Page() {
                   <li><a href="https://presence.calibrestudio.co/">Presence</a><span aria-hidden="true">•</span></li>
                   <li><a href={INDEXED}>Free AI check</a><span aria-hidden="true">•</span></li>
                   <li><a href="https://getfound.calibrestudio.co/">Get Found</a><span aria-hidden="true">•</span></li>
-                  <li><a href="https://ads.calibrestudio.co/">OpenAI Ads</a><span aria-hidden="true">•</span></li>
+                  <li><a href="https://ads.calibrestudio.co/">ChatGPT Ads</a><span aria-hidden="true">•</span></li>
                   <li><a href={`${SITE}/intelligence`}>Intelligence</a><span aria-hidden="true">•</span></li>
                 </ul>
               </div>
