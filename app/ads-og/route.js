@@ -106,6 +106,7 @@ export async function GET(request) {
   return new ImageResponse(square ? squareCard : landscape, {
     width: 1200,
     height: square ? 1200 : 630,
+    headers: { "Access-Control-Allow-Origin": "*" },
     fonts: [
       { name: "Sans", data: regular, weight: 400, style: "normal" },
       { name: "Sans", data: bold, weight: 700, style: "normal" },
