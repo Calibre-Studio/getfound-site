@@ -60,6 +60,7 @@ export async function GET(request) {
     </div>
   );
 
+  // Square ad card: clean brand tile, no small headline. Reads at thumbnail size.
   const squareCard = (
     <div
       style={{
@@ -67,6 +68,8 @@ export async function GET(request) {
         height: "100%",
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
         backgroundColor: "#ffffff",
         position: "relative",
         fontFamily: "Sans",
@@ -74,31 +77,10 @@ export async function GET(request) {
     >
       <div style={{ position: "absolute", top: 0, left: 0, width: 1200, height: 8, backgroundColor: "#000000" }} />
 
-      <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", marginLeft: 90, marginRight: 90 }}>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <img src={ICON} width={30} height={30} style={{ width: 30, height: 30, objectFit: "contain" }} />
-          <div style={{ display: "flex", marginLeft: 26, fontSize: 30, letterSpacing: 18, color: "#6e6e6e", fontWeight: 400 }}>
-            CHATGPT ADS
-          </div>
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", marginTop: 44, fontSize: 120, fontWeight: 700, color: "#000000", lineHeight: 1.04, letterSpacing: -3 }}>
-          <div style={{ display: "flex" }}>Be the answer</div>
-          <div style={{ display: "flex" }}>inside ChatGPT.</div>
-        </div>
-      </div>
-
-      <div style={{ display: "flex", flexDirection: "column", marginLeft: 90, marginRight: 90, marginBottom: 84 }}>
-        <div style={{ width: "100%", height: 1, backgroundColor: "rgba(0,0,0,0.14)" }} />
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 32 }}>
-          <div style={{ display: "flex", fontSize: 27, color: "#000000" }}>ads.calibrestudio.co</div>
-          <img
-            src={WORDMARK}
-            width={330}
-            height={42}
-            style={{ width: 330, height: 42, objectFit: "contain", objectPosition: "right center" }}
-          />
-        </div>
+      <img src={ICON} width={230} height={230} style={{ width: 230, height: 230, objectFit: "contain" }} />
+      <img src={WORDMARK} width={560} height={70} style={{ width: 560, height: 70, objectFit: "contain", marginTop: 66 }} />
+      <div style={{ display: "flex", marginTop: 40, fontSize: 33, letterSpacing: 16, color: "#6e6e6e", fontWeight: 400 }}>
+        CHATGPT ADS
       </div>
     </div>
   );
