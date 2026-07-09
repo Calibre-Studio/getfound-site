@@ -60,7 +60,8 @@ export async function GET(request) {
     </div>
   );
 
-  // Square ad card: clean brand tile, no small headline. Reads at thumbnail size.
+  // Square ad card: a confident, restrained brand lockup. No top bar, no label.
+  // Real mark + wordmark from the CDN, strong scale hierarchy, generous whitespace.
   const squareCard = (
     <div
       style={{
@@ -71,17 +72,11 @@ export async function GET(request) {
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#ffffff",
-        position: "relative",
         fontFamily: "Sans",
       }}
     >
-      <div style={{ position: "absolute", top: 0, left: 0, width: 1200, height: 8, backgroundColor: "#000000" }} />
-
-      <img src={ICON} width={230} height={230} style={{ width: 230, height: 230, objectFit: "contain" }} />
-      <img src={WORDMARK} width={560} height={70} style={{ width: 560, height: 70, objectFit: "contain", marginTop: 66 }} />
-      <div style={{ display: "flex", marginTop: 40, fontSize: 33, letterSpacing: 16, color: "#6e6e6e", fontWeight: 400 }}>
-        CHATGPT ADS
-      </div>
+      <img src={ICON} width={300} height={300} style={{ width: 300, height: 300, objectFit: "contain" }} />
+      <img src={WORDMARK} width={620} height={78} style={{ width: 620, height: 78, objectFit: "contain", marginTop: 84 }} />
     </div>
   );
 
