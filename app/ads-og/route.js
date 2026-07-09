@@ -60,8 +60,9 @@ export async function GET(request) {
     </div>
   );
 
-  // Square ad card: a confident, restrained brand lockup. No top bar, no label.
-  // Real mark + wordmark from the CDN, strong scale hierarchy, generous whitespace.
+  // Square ad card: a bold brand lockup sized to FILL the frame, because the
+  // ad card renders this image small. Big mark + big wordmark, tight margins,
+  // so it stays legible when ChatGPT shrinks it. No top bar, no label.
   const squareCard = (
     <div
       style={{
@@ -75,8 +76,8 @@ export async function GET(request) {
         fontFamily: "Sans",
       }}
     >
-      <img src={ICON} width={300} height={300} style={{ width: 300, height: 300, objectFit: "contain" }} />
-      <img src={WORDMARK} width={620} height={78} style={{ width: 620, height: 78, objectFit: "contain", marginTop: 84 }} />
+      <img src={ICON} width={680} height={680} style={{ width: 680, height: 680, objectFit: "contain" }} />
+      <img src={WORDMARK} width={900} height={132} style={{ width: 900, height: 132, objectFit: "contain", marginTop: 68 }} />
     </div>
   );
 
