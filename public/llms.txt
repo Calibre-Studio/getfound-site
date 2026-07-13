@@ -1,6 +1,6 @@
 # Get Found by Calibre Studio
 
-> Get Found is Calibre Studio's AI visibility offering: get your brand recommended when customers ask ChatGPT, Claude, Gemini, Grok, Perplexity or Copilot for the best option. Start free, then choose an audit, a one-time fix, or always-on monitoring.
+> Get Found is Calibre Studio's AI visibility offering: get your brand recommended when customers ask ChatGPT, Claude, Gemini, Grok, Perplexity, Copilot or Google AI Overviews for the best option. Start free, then choose an audit, a one-time fix, or always-on monitoring.
 
 ## What it is
 Search changed. People now ask an AI assistant, and it answers with a shortlist of a few brands. Get Found makes a brand easy for those engines to read, understand, rate and recommend, scored on the DCAT method: Discoverability, Clarity, Authority, Trust.
