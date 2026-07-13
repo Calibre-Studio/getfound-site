@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Presence by Calibre Studio: Be Seen and Be Found";
+export const alt = "Get Found by Calibre Studio: be the brand AI recommends";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -33,19 +33,19 @@ export default async function Image() {
         <div style={{ display: "flex", alignItems: "center", marginTop: 100, marginLeft: 80 }}>
           <img src={ICON} width={26} height={26} style={{ width: 26, height: 26, objectFit: "contain" }} />
           <div style={{ display: "flex", marginLeft: 24, fontSize: 28, letterSpacing: 18, color: "#6e6e6e", fontWeight: 400 }}>
-            BE SEEN · BE FOUND
+            BE FOUND
           </div>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", marginTop: 48, marginLeft: 80, fontSize: 96, fontWeight: 700, color: "#000000", lineHeight: 1.05, letterSpacing: -3 }}>
-          <div style={{ display: "flex" }}>Be seen.</div>
-          <div style={{ display: "flex" }}>Be found.</div>
+          <div style={{ display: "flex" }}>Be the brand</div>
+          <div style={{ display: "flex" }}>AI recommends.</div>
         </div>
 
         <div style={{ position: "absolute", left: 80, bottom: 58, width: 1040, display: "flex", flexDirection: "column" }}>
           <div style={{ width: "100%", height: 1, backgroundColor: "rgba(0,0,0,0.14)" }} />
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginTop: 30 }}>
-            <div style={{ display: "flex", fontSize: 25, color: "#000000" }}>presence.calibrestudio.co</div>
+            <div style={{ display: "flex", fontSize: 25, color: "#000000" }}>getfound.calibrestudio.co</div>
             <img
               src={WORDMARK}
               width={320}
