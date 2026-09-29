@@ -224,6 +224,29 @@ export default function Page() {
           <p className="impact-stmt">People are <span className="pop">2.5x</span> more likely to visit a brand AI recommends than its competitor.</p>
           <p className="impact-src">Similarweb &middot; The Downstream Impact of AI Visibility, 2026</p>
         </div>
+
+        <div className="evidence r">
+          <p className="eyebrow"><span className="slash">//</span>What the citation data says</p>
+          <div className="evidence-grid">
+            <div className="evidence-item">
+              <span className="evidence-num">3.5x</span>
+              <p>Sites with 32,000+ referring domains are cited by ChatGPT 3.5x more often than sites with 200 or fewer. Citations and references.</p>
+            </div>
+            <div className="evidence-item">
+              <span className="evidence-num">92%</span>
+              <p>92% of Google AI Overviews link to a domain already in the organic top 10. Site structure and strong SEO first.</p>
+            </div>
+            <div className="evidence-item">
+              <span className="evidence-num">4x</span>
+              <p>Brands present on Reddit, Quora and review platforms earn roughly 4x the citations. Reputation and trust signals.</p>
+            </div>
+            <div className="evidence-item">
+              <span className="evidence-num">0</span>
+              <p>Measurable citation lift from FAQ schema or llms.txt. We still include both, as hygiene, not as the lever.</p>
+            </div>
+          </div>
+          <p className="impact-src">SE Ranking &middot; Citation studies across 2M+ pages and 400,000 domains, 2026 &middot; Correlation, not causation</p>
+        </div>
       </section>
 
       <section className="proof reveal">
